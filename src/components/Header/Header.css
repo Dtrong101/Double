@@ -68,11 +68,80 @@
   font-weight: 600;
   z-index: 10;
 }
-.nav__icons span img {
+.nav__icons .profile img {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  border-radius: 50%;
 }
+
+.nav__icons .profile {
+  position: relative;
+  z-index: 9;
+}
+/* Header.css */
+
+
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+ 
+}
+
+.profile__actions {
+  position: absolute;
+  top: 98%;
+  left: 0;
+  width: 150px;
+  z-index: 10;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--card-bg-01);
+  line-height: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.profile:hover .profile__actions {
+  display: block;
+}
+
+/* .profile__actions span {
+  display: block;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+} */
+
+/* .profile__actions span:hover {
+  background-color: #f5f5f5;
+} */
+
+
+/* .nav__icons .profile .profile__actions {
+  position: absolute;
+  top: 98%;
+  left: 0;
+  width: 150px;
+  z-index: 10;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--card-bg-01);
+  line-height: 30px;
+  display: none;
+  cursor: pointer;
+} */
+
+/* .show__profileAction {
+  display: block;
+} */
+
 .mobile__menu {
   font-size: 1.3rem;
   color: var(--primary-color);
